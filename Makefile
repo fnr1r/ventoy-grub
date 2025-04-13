@@ -16,6 +16,7 @@ clean:
 	-rm -rf $(addprefix build-overlay/,$(FORMATS))
 	-rm -r build-work
 clean-all: clean
+	-sudo rm -rf build-overlay/bootstrap/work/index
 	-rm -rf build-overlay
 
 $(FORMATS): bootstrap
